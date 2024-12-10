@@ -31,7 +31,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy to NuxtHub
-        uses: nuxt-hub/action@v1
+        uses: nuxt-hub/action@main
         id: deploy
         with:
           project-key: atidone-yeah-qb21
