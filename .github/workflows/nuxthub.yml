@@ -34,5 +34,5 @@ jobs:
         uses: nuxt-hub/action@v1
         id: deploy
         with:
-          project-key: atidone-yeah-qb21
           hub-url: https://dev-444.nuxthub.pages.dev
+#          project-key: atidone-yeah-qb21
