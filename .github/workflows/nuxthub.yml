@@ -21,7 +21,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -31,7 +31,8 @@ jobs:
         run: pnpm build
 
       - name: Deploy to NuxtHub
-        uses: nuxt-hub/action@main
+        uses: nuxt-hub/action@v1
         id: deploy
         with:
-          hub-url: https://dev-444.nuxthub.pages.dev
+          project-key: atidone-yeah-qb21
+          hub-url: https://dev.nuxthub.pages.dev
