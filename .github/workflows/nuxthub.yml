@@ -34,4 +34,4 @@ jobs:
         uses: nuxt-hub/action@main
         id: deploy
         with:
-          hub-url: https://dev.nuxthub.pages.dev
+          hub-url: https://dev-444.nuxthub.pages.dev
