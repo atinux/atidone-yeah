@@ -18,7 +18,7 @@ jobs:
       - name: Secret mismatch
         if: env.oh != 'my'
         run: |
-          echo env.oh
+          echo ${{ env.oh }}
           echo "Secret does not match expected value"
           exit 1
 
