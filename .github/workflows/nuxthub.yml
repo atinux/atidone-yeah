@@ -35,4 +35,6 @@ jobs:
         id: deploy
         with:
           hub-url: https://dev-444.nuxthub.pages.dev
-#          project-key: atidone-yeah-qb21
+          # project-key: atidone-yeah-qb21
+        env:
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
