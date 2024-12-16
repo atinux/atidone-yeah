@@ -14,6 +14,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+  
+      - name: Secret mismatch
+        if: env.oh != 'my'
+        run: |
+          echo "Secret does not match expected value"
+          exit 1
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
